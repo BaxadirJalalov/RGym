@@ -2,44 +2,92 @@
     <img src="src/assets/images/bg-hero.webp" alt="" class="bg-image">
     <div class="container">
         <div class="wrapper">
-            
             <div class="left">
-                <div class="line"></div>
-
-                <div class="text">
-                    <h1 class="title">Making Different from other builders<span>.</span></h1>
+                
+                <div class="wrap">
+                    <div class="line"></div>
                     
-                    <div class="button">
-                        <button class="btn">Get Started</button>
-                        <img src="src/assets/icons/player.svg" alt="" class="player-icon">
-                    </div> 
+                    <div class="text-btn-wrap">
+                        <h1 class="text">Making Different from other builders<span>.</span></h1>
+
+                        <div class="button">
+                            <button class="btn">Get Started</button>
+                            <img src="src/assets/icons/player.svg" alt="" class="play-icon">
+                        </div>
+                    </div>
                 </div>
+                
             </div>
 
+            <!-- right -->
+            <div class="right">
+                <div class="icons">
+                    <img src="src/assets/icons/Vector (2).svg" alt="" class="icon">
+                    <img src="src/assets/icons/Vector (3).svg" alt="" class="icon">
+                    <img src="src/assets/icons/Vector (4).svg" alt="" class="icon">
+                </div>
+
+                <div class="arrows">
+                    <img src="src/assets/icons/Arrow left.svg" alt="" class="arrow">
+                    <a href="" class="prev">Prev</a>
+                    <a href="" class="next">Next</a>
+                    <img src="src/assets/icons/Arrow right.svg" alt="" class="arrow">
+                </div>
+            </div>
+            <div class="scroll-down">
+                <p class="scroll"><span>Scroll</span> Down</p>
+                <img src="src/assets/icons/Arrow right.svg" alt="" class="arrow">
+            </div>
         </div>
     </div>
 </section>
 
 <style lang="scss">
-    @import 'src/assets/styles/fonts';
+
     .hero{
-        
         .bg-image{
-            position: absolute;
             width: 100%;
             height: 100vh;
+            position: absolute;
             z-index: -1;
         }
 
+
         .wrapper{
-            width: 100%;
-            height: 100vh;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-between;
+
+
+            .scroll-down{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+                bottom: -180px;
+                left: 200px;
+
+                span{
+                    color: #fff;
+                    background: #A92A1D;
+                    padding: 5px;
+                }
+
+                .scroll{
+                    font-size: 18px;
+                    font-family: 'regular-400';
+                    color: #A92A1D;
+                    transform: rotate(90deg);
+                }
+            }
+
 
             .left{
+                width: 100%;
+                height: 100vh;
                 display: flex;
+                flex-direction: column;
+                justify-content: center;
 
                 .line{
                     width: 132px;
@@ -48,40 +96,79 @@
                     margin-top: 15px;
                 }
 
-                .text{
+                .wrap{
+                    display: flex;    
 
+                    .text-btn-wrap{
+                        .text{
+                            width: 460px;
+                            font-size: 60px;
+                            font-family: 'bold-700';
+                            color: #fff;
+    
+                            span{
+                                color: #A92A1D;
+                            }
+                        } 
 
-                    .title{
-                        width: 460px;
-                        font-size: 60px;
-                        font-family: 'bold-700';
-                        color: #fff;
-                        padding-bottom: 46px;
+                        .button{
+                            display: flex;
+                            align-items: center;
+                            gap: 25px;
+                            margin-top: 46px;
 
-                        span{
-                            color :#A92A1D;
-                        }
-                    }
+                            .btn{
+                                padding: 12px 26px;
+                                font-size: 18px;
+                                font-family: 'regular-400';
+                                background: #A92A1D;
+                                color: #fff;
+                            }
 
-                    .button{
-                        display: flex;
-                        gap: 25px;
-                
-                        .btn{
-                            padding: 12px 25px;
-                            font-size:18px;
-                            font-family: 'regular-400';
-                            background: #A92A1D;
-                        }
-
-                        .player-icon{
-                            cursor: pointer;
+                            .play-icon{
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
             }
 
-             
+            // right
+            .right{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 70px;
+
+                .icons{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 48px;
+                    cursor: pointer;
+                }
+
+                .arrows{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 30px;
+
+                    .prev{
+                        font-size: 18px;
+                        font-family: 'regular-400';
+                        color: #fff;
+                        transform: rotate(90deg);
+                    }
+
+                    .next{
+                        font-size: 18px;
+                        font-family: 'regular-400';
+                        color: #A92A1D;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
         }
     }
 </style>

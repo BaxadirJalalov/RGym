@@ -2,14 +2,19 @@
 import Layout from '../layouts/Layout.astro';
 import HeaderSection from './sections/MainPage/HeaderSection.astro';
 import HeroSection from './sections/MainPage/HeroSection.astro';
+import PopularExercise from './sections/MainPage/PopularExercise.astro';
+import NewsletterSection from './sections/MainPage/NewsletterSection.astro';
 ---
 
 <Layout title="Welcome to Astro.">
 	<HeaderSection/>
 	<HeroSection/>
+	<PopularExercise/>
+	<NewsletterSection/>
 
 </Layout>
 
 <style lang="scss">
-
+	@import 'src/assets/styles/generalStyle';
+	@import 'src/assets/styles/fonts';
 </style>

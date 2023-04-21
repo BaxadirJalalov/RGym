@@ -1,0 +1,204 @@
+<section class="popular-exercise">
+    <div class="container">
+        <div class="wrapper">
+          <div class="wrap">
+            <h1 class="title">Popular Exercise</h1>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="src/assets/icons/line.svg" alt="">
+          </div>
+
+            <div class="images-wrap">
+                <img src="src/assets/images/Exercise1.jpg" alt="" class="image">
+                <img src="src/assets/images/Exercise2.jpg" alt="" class="image">
+                <img src="src/assets/images/Exercise3.jpg" alt="" class="image">
+                <img src="src/assets/images/Exercise4.jpg" alt="" class="image">
+            </div>
+
+           <div class="plans">
+                <h1 class="title">The ultimate online online personal training plans</h1>
+
+                <div class="right-plans">
+                    <div class="line"></div>
+                    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero.</div>
+                </div>
+            </div>
+
+           <div class="personal-training">
+                <img src="src/assets/images/Personal-training.jpg" alt="" class="img">
+            
+                <div class="text-wrap">
+                    <h1 class="title">Personal training</h1>
+                    <h2 class="subtitle">Gym time optimized</h2>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="images">
+        <img src="src/assets/images/Personal-training1.jpg" alt="" class="img">
+        <img src="src/assets/images/Personal-training2.jpg" alt="" class="img">
+        <img src="src/assets/images/Personal-training3.jpg" alt="" class="img">
+        <img src="src/assets/images/Personal-training4.jpg" alt="" class="img">
+    </div>
+
+    <div class="welcome">
+        <h1 class="title">Welcome to  RGym</h1>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero.</p>
+    </div>
+</section>
+
+<style lang="scss">
+    .popular-exercise{
+        .wrapper{
+            .wrap{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 155px 0 120px;
+
+                .title{
+                    font-size: 48px;
+                    font-family: 'semibold-600';
+                    color: #fff;
+                }
+                .text{
+                    width: 790px;
+                    font-size: 18px;
+                    font-family: 'regulat-400';
+                    color: #fff;
+                    text-align: center;
+                    padding: 30px 0;
+                }
+            }
+
+            .images-wrap{
+                display: flex;
+                justify-content: space-between;
+                
+                .image{
+                    width: 276px;
+                    height: auto;
+                }
+            }
+
+            .plans{
+                display: flex;
+                justify-content: space-between; 
+                top: 300px;
+                margin: 155px 0 120px;
+
+                .title{
+                    font-size: 36px;
+                    font-family: 'semibold-600';
+                    color: #fff;
+                    width: 365px;
+                }
+
+                .right-plans{
+                    display: flex;
+                    align-items: center;
+
+                    .line{
+                        width: 2px;
+                        height: 95px;
+                        background: #E74C3C;
+                        margin-right: 20px;
+                    }
+
+                    .text{
+                        font-size: 18px;
+                        font-family: 'regular-400';
+                        color: #fff;
+                        width: 700px;
+                    }
+                }
+            }
+
+            .personal-training{
+                display: flex;
+                justify-content: space-between;
+
+                .img{
+                    width: 600px;
+                }
+
+                .text-wrap{
+                    width: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    .title{
+                        font-size: 36px;
+                        font-family: 'semibold-600';
+                        color: #fff;
+                    }
+                    .subtitle{
+                        font-size: 24px;
+                        font-family: 'semibold-600';
+                        color: #fff;
+                        padding: 24px 0 12px;
+                    }
+                    .text{
+                        font-size: 18px;
+                        font-family: 'regular-400';
+                        color: #fff;
+                    }
+                }
+            }
+
+        }
+        .images{
+            position: relative;
+            .img:nth-child(1){
+                width: 400px;
+                position: absolute;
+                right: 0;
+                top: -150px;
+            }
+            .img:nth-child(2){
+                width: 400px;
+                position: absolute;
+                left: 0;
+                top: 290px;
+            }
+            .img:nth-child(3){
+                width: 400px;
+                position: absolute;
+                left: 500px;
+                top: 100px;
+            }
+            .img:nth-child(4){
+                width: 400px;
+                position: absolute;
+                right: 0px;
+                top: 290px;
+            }
+            
+            
+        }
+        .welcome{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            bottom: -550px;
+
+            .title{
+                font-size: 24px;
+                font-family: 'bold-700';
+                color: #fff;
+                padding-bottom: 22px;
+            }
+
+            .text{
+                font-size: 18px;
+                font-family: 'regular-400';
+                color: #fff;
+                width: 388px;
+            }
+        }
+    }
+</style>
