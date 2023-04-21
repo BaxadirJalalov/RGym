@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1210px;
+    margin: 0 auto;
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+}
+ul, ol, li{
+    list-style: none;
+}

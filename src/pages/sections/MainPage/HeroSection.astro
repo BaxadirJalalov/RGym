@@ -1,0 +1,87 @@
+<section class="hero">
+    <img src="src/assets/images/bg-hero.webp" alt="" class="bg-image">
+    <div class="container">
+        <div class="wrapper">
+            
+            <div class="left">
+                <div class="line"></div>
+
+                <div class="text">
+                    <h1 class="title">Making Different from other builders<span>.</span></h1>
+                    
+                    <div class="button">
+                        <button class="btn">Get Started</button>
+                        <img src="src/assets/icons/player.svg" alt="" class="player-icon">
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    @import 'src/assets/styles/fonts';
+    .hero{
+        
+        .bg-image{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: -1;
+        }
+
+        .wrapper{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .left{
+                display: flex;
+
+                .line{
+                    width: 132px;
+                    height: 2px;
+                    background: #A92A1D;
+                    margin-top: 15px;
+                }
+
+                .text{
+
+
+                    .title{
+                        width: 460px;
+                        font-size: 60px;
+                        font-family: 'bold-700';
+                        color: #fff;
+                        padding-bottom: 46px;
+
+                        span{
+                            color :#A92A1D;
+                        }
+                    }
+
+                    .button{
+                        display: flex;
+                        gap: 25px;
+                
+                        .btn{
+                            padding: 12px 25px;
+                            font-size:18px;
+                            font-family: 'regular-400';
+                            background: #A92A1D;
+                        }
+
+                        .player-icon{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+             
+        }
+    }
+</style>
