@@ -33,18 +33,17 @@
                 </div>
             </div>
 
+            <div class="images">
+                <img src="src/assets/images/Personal-training2.jpg" alt="" class="img">
+                <img src="src/assets/images/Personal-training3.jpg" alt="" class="img">
+                <img src="src/assets/images/Personal-training4.jpg" alt="" class="img">
+            </div>
+        
+            <div class="welcome">
+                <h1 class="title">Welcome to  RGym</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero.</p>
+            </div>
         </div>
-    </div>
-    <div class="images">
-        <img src="src/assets/images/Personal-training1.jpg" alt="" class="img">
-        <img src="src/assets/images/Personal-training2.jpg" alt="" class="img">
-        <img src="src/assets/images/Personal-training3.jpg" alt="" class="img">
-        <img src="src/assets/images/Personal-training4.jpg" alt="" class="img">
-    </div>
-
-    <div class="welcome">
-        <h1 class="title">Welcome to  RGym</h1>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero.</p>
     </div>
 </section>
 
@@ -147,58 +146,18 @@
                 }
             }
 
-        }
-        .images{
-            position: relative;
-            .img:nth-child(1){
-                width: 400px;
-                position: absolute;
-                right: 0;
-                top: -150px;
-            }
-            .img:nth-child(2){
-                width: 400px;
-                position: absolute;
-                left: 0;
-                top: 290px;
-            }
-            .img:nth-child(3){
-                width: 400px;
-                position: absolute;
-                left: 500px;
-                top: 100px;
-            }
-            .img:nth-child(4){
-                width: 400px;
-                position: absolute;
-                right: 0px;
-                top: 290px;
-            }
-            
-            
-        }
-        .welcome{
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            bottom: -550px;
+            .images{
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                padding: 155px 0;
 
-            .title{
-                font-size: 24px;
-                font-family: 'bold-700';
-                color: #fff;
-                padding-bottom: 22px;
+                .img{
+                    width: 300px;
+                }
             }
 
-            .text{
-                font-size: 18px;
-                font-family: 'regular-400';
-                color: #fff;
-                width: 388px;
-            }
         }
+        
     }
 </style>

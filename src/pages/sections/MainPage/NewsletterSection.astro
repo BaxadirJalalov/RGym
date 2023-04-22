@@ -1,1 +1,94 @@
-section
+<section class="newsletter">
+    <div class="container">
+        <div class="wrapper">
+            <div class="images">
+                <img src="src/assets/images/Personal-training5.jpg" alt="" class="img">
+                <div class="welcome">
+                    <h1 class="title">Welcome to  RGym</h1>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque sa gittis magna erat sagittis morbi. Id libero.</p>
+                </div>
+                <img src="src/assets/images/Personal-training1.jpg" alt="" class="img">
+            </div>
+
+            <div class="sign-up">
+                <h1 class="title">Subscribe to our newsletter</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque.</p>
+                <input type="text" class="input" placeholder="Enter Email">
+                <button class="btn">Submit</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+    .newsletter{
+        .wrapper{
+            .images{
+                display: flex;
+                justify-content: space-between;
+                .img{
+                    width: 400px;
+                }
+
+                .welcome{
+                    text-align: center;
+                    .title{
+                        font-size: 24px;
+                        font-family: 'bold-700';
+                        color: #fff;
+                    }
+                    .text{
+                        font-size: 18px;
+                        font-family: 'regular-400';
+                        color: #fff;
+                    }
+                }
+            }
+
+            .sign-up{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 140px 0 200px;
+
+                .title{
+                    font-size: 36px;
+                    font-family: 'semibold-600';
+                    color: #fff;
+                }
+
+                .text{
+                    font-size: 18px;
+                    font-family: 'regular-400';
+                    color: #fff;
+                    padding: 20px 0;
+                }
+
+                .input{
+                    width: 400px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-family: 'regular-400';
+                    padding: 18px 0px;
+                    background: none;
+                    color: #fff;
+                    outline: none;
+                    border: 2px solid #fff;
+                    margin-bottom: 25px;
+                }
+
+                .btn{
+                    width: 400px;
+                    text-align: center;
+                    font-size: 18px;
+                    font-family: 'regular-400';
+                    padding: 18px 0px;
+                    background: #fff;
+                    color: #000;
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+</style>
