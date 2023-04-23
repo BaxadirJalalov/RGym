@@ -13,7 +13,7 @@
             <div class="sign-up">
                 <h1 class="title">Subscribe to our newsletter</h1>
                 <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dui neque.</p>
-                <input type="text" class="input" placeholder="Enter Email">
+                <input type="text" class="input border" placeholder="Enter Email" id="input">
                 <button class="btn">Submit</button>
             </div>
         </div>
@@ -77,8 +77,11 @@
                     background: none;
                     color: #fff;
                     outline: none;
+                    margin-bottom: 25px;    
+                }
+
+                .border{
                     border: 2px solid #fff;
-                    margin-bottom: 25px;
                 }
 
                 .btn{
@@ -99,4 +102,51 @@
             }
         }
     }
+
+.valid{
+    border: 2px solid green;
+}
+
+.invalid{
+    border: 2px solid red;
+}
+
+
 </style>
+
+<script>
+    const email = document.querySelector('#input');
+
+    email.addEventListener('input', () => {
+        const value = email.value;
+
+        if(ValidateEmail(value)) {
+        email.classList.add("valid")
+        email.classList.remove("invalid")
+        email.classList.remove('border')
+        } else{
+        email.classList.add("invalid");
+        email.classList.remove("valid");
+        email.classList.remove('border')
+        };
+
+        clearInducators(email,value)
+    })
+
+
+// email
+function ValidateEmail(input_str) {
+    const re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    return re.test(input_str);
+};
+
+// -->
+function clearInducators(el, val) {
+    if(val.length == 0) {
+        el.classList.remove("valid")
+        el.classList.remove("invalid")
+        email.classList.add('border')
+    }
+}
+</script>
